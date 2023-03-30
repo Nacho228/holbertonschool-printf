@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 	
                 if (buffer[i] == '%')
                 {
-                        switch (buffer[i])
+                        switch (buffer[i+1])
                         {
 				case 'c':
 				p = va_arg(args, int);

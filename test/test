@@ -1,0 +1,29 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdarg.h>
+#include <unistd.h>
+
+/**
+ *
+ */
+
+int _printf(const char *format, ...)
+{
+	va_list args;
+	
+	va_start(args, format);
+
+	char *buffer = format;
+	int i = 0;
+	
+	while(i != %)
+	{
+		i++;	
+		
+		if (buffer[i] == %)
+		{
+			switch
+		}
+	}
+	
+}

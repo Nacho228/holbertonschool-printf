@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 	
                 if (buffer[i] == '%')
                 {
-                        switch (buffer[i+1])
+                        switch (buffer[i + 1])
                         {
 				case 'c':
 				p = va_arg(args, int);
@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 				case 's':
 				a = va_arg(args, char *);
 				write(1, a, strlen(a));
-				count += strlen(a);
+				count += strlen(a) -1;
 				break;
 				default:
 				break;

@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <unistd.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
@@ -15,13 +16,15 @@
 typedef struct printf
 {
     char *pf;
-    int (*fp)(va_list args, int a, char c);
-} pf_t;
+    int (*fp)(va_list args, int a);
+} fp_t;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int pf_c(va_list args, int a, char c);
-int (*fp)(va_list args, int a, char c);
+int (*fp)(va_list args, int a);
+int pf_c(va_list args, int a);
+extern void init_fp(void);
+int pf_s(va_list args, int a);
 
 
 #endif

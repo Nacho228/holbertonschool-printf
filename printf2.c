@@ -1,8 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdarg.h>
-#include <unistd.h>
 
 /**
  *
@@ -12,13 +8,12 @@ int _printf(const char *format, ...)
 {
         va_list args;
         const char *buffer;
-	int p;
-	char *a;
+	int p, a;
 	int i = 0;
 	int count = 0;
 
+	init_fp();
 	va_start(args, format);
-
 	buffer = format;
 
         while(buffer[i] != '\0')
@@ -30,21 +25,23 @@ int _printf(const char *format, ...)
                         {
 				case 'c':
 				p = va_arg(args, int);
-				count += fp(args, p, 'c');
+				count += fp(args, p);
 				break;
 				case 's':
+				a = va_arg(args, int);
+				count = fp(args, a);
 				break;
 				default:
 				break;
                         }
-		}
-		else
-		{	
+		i += 2;
+		continue;
+		}	
 			(write(1, &buffer[i], 1));
 			count++;
-		}
-	i++;	
+			i++;	
 	}
 va_end(args);
 return (count);
 }
+

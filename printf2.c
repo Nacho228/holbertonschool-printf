@@ -25,11 +25,11 @@ int _printf(const char *format, ...)
                         {
 				case 'c':
 				p = va_arg(args, int);
-				count += fp(args, p);
+				count += fp((char) va_arg(args, int));
 				break;
 				case 's':
-				a = va_arg(args, int);
-				count = fp(args, a);
+				a = va_arg(args, char *);
+				count += fp(va_arg(args, char *));
 				break;
 				default:
 				break;

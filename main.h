@@ -8,23 +8,24 @@
 #include <limits.h>
 
 /**
- * struct op - Struct op
+ * struct printf - printf struct.
  * @op: The operator
  * @f: The function associated
  */
 
 typedef struct printf
 {
-    char *pf;
-    int (*fp)(va_list args, int a);
+    char pf;
+    int (*fp)(va_list);
 } fp_t;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int (*fp)(va_list args, int a);
-int pf_c(va_list args, int a);
+int (*fp)(va_list);
+int pf_c(va_list args);
 extern void init_fp(void);
-int pf_s(va_list args, int a);
+int pf_s(va_list args);
+
 
 
 #endif

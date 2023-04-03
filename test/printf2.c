@@ -8,9 +8,11 @@ int _printf(const char *format, ...)
 {
         va_list args;
         const char *buffer;
-	int p, a;
+	int p, c;
+	const char *a;
 	int i = 0;
 	int count = 0;
+	fp_t ops;
 
 	init_fp();
 	va_start(args, format);
@@ -28,8 +30,8 @@ int _printf(const char *format, ...)
 				count += fp(args, p);
 				break;
 				case 's':
-				a = va_arg(args, int);
-				count = fp(args, a);
+				a = va_arg(args, const char *);
+				count += fp(args, strlen(a));
 				break;
 				default:
 				break;

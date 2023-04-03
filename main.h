@@ -25,7 +25,7 @@ int (*fp)(va_list);
 int pf_c(va_list args);
 extern void init_fp(void);
 int pf_s(va_list args);
-
+int pf_d(va_list args);
 
 
 #endif

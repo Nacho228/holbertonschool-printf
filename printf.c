@@ -26,6 +26,8 @@ int _printf(const char *format, ...)
 				case 's':
 				count += pf_s(args);
 				break;
+				case '%':
+				_putchar('%');
 				case 'd':
 				case 'i':
 				break;

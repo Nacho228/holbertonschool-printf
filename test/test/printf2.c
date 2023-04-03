@@ -30,8 +30,13 @@ int _printf(const char *format, ...)
 				count += fp(args, p);
 				break;
 				case 's':
+<<<<<<< HEAD:printf2.c
+				a = va_arg(args, int);
+				count += fp(args, a);
+=======
 				a = va_arg(args, const char *);
 				count += fp(args, strlen(a));
+>>>>>>> 8c1279ed6922ec2511f5479ba41505c8f720448e:test/test/printf2.c
 				break;
 				default:
 				break;

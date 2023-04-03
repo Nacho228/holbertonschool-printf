@@ -1,0 +1,33 @@
+.TH _printf "2/4/2023"
+
+.SH NAME 
+_printf - print to standard output according to a specified format.
+
+.SH SYNOPSIS
+.br
+int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+The _printf() function is a C standard library function used to print data to the standard output according to a specified format. But in this case only handles the %c, %s, and %% format specifiers.
+
+.SH RETURN VALUE
+The _printf() function returns the number of characters printed,
+
+.SH EXAMPLES
+Example usage of the _printf() function:
+
+.PP
+#include <stdio.h>
+
+int _printf(const char *format, ...);
+
+int main()
+{
+char p = "Hello, world!";
+    
+_printf("%s\n", p);
+return 0;
+}
+.SH AUTHOR
+Nacho llanes <@nacho228>
+Vicenzo Anza <@vicenzoanza>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Holberton School Printf.
 .br
 This repository contains the code Printf project.
@@ -27,3 +28,6 @@ Requirements The following standard library functions and macros are used in thi
 Authors.
 .br
 This project was created by Holberton School Uruguay students Nacho Llanes (@nacho228) and Vicenzo Anza (@vicenzoanza).
+=======
+Readme
+>>>>>>> 8c1279ed6922ec2511f5479ba41505c8f720448e

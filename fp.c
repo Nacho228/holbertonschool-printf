@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdarg.h>
-
+/**
+ * @pf_c: Handles the 'c' format specifier, which outputs a single character to the standard output.
+ * @pf_s: Handles the 's' format specifier, which outputs a single character to the standard output.
+ * @pf_d: Handles the 'c' format specifier, which outputs a single character to the standard output.
+ * @init_fp: Is used to call the corresponding functions to handle the different format specifiers in the `printf` format string.
+ **/
 int (*fp)(va_list);
 
 fp_t ops[] =

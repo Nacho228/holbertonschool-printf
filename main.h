@@ -9,14 +9,14 @@
 
 /**
  * struct printf - printf struct.
- * @op: The operator
- * @f: The function associated
+ * @fp:  A pointer to a function.
+ * @pf: A pointer to a function that take an integer.
  */
 
 typedef struct printf
 {
-    char pf;
-    int (*fp)(va_list);
+char pf;
+int (*fp)(va_list);
 } fp_t;
 
 int _putchar(char c);

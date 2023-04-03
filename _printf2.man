@@ -1,6 +1,6 @@
 .TH _printf "2/4/2023"
 
-.SH NAME 
+.SH NAME
 _printf - print to standard output according to a specified format.
 
 .SH SYNOPSIS
@@ -24,7 +24,7 @@ int _printf(const char *format, ...);
 int main()
 {
 char p = "Hello, world!";
-    
+
 _printf("%s\n", p);
 return 0;
 }

@@ -27,16 +27,11 @@ int _printf(const char *format, ...)
                         {
 				case 'c':
 				p = va_arg(args, int);
-				count += fp((char) va_arg(args, int));
+				count += fp(args, p);
 				break;
 				case 's':
-<<<<<<< HEAD:test/printf2.c
 				a = va_arg(args, const char *);
 				count += fp(args, strlen(a));
-=======
-				a = va_arg(args, char *);
-				count += fp(va_arg(args, char *));
->>>>>>> f2645aa720c472d3657da7921cda2a483eabfcc0:printf2.c
 				break;
 				default:
 				break;

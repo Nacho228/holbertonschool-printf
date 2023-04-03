@@ -8,12 +8,12 @@
 #include <limits.h>
 
 /**
- * struct printf - printf struct.
+ * struct op - printf struct.
  * @op: The operator
  * @f: The function associated
  */
 
-typedef struct printf
+typedef struct printf 
 {
     char pf;
     int (*fp)(va_list);

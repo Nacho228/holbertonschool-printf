@@ -28,29 +28,6 @@ int pf_s(va_list args)
 	return (count);
 }
 
-int pf_d(va_list args)
-{
-    int num = va_arg(args, int);
-    int count = 0;
-
-    if (num < 0)
-    {
-        putchar('-');
-        count++;
-        num = -num;
-    }
-
-    if (num / 10)
-    {
-        count += pf_d(args);
-    }
-
-    putchar(num % 10 + '0');
-    count++;
-
-    return count;
-}
-
 void init_fp(void)
 {
 	fp = &pf_c;

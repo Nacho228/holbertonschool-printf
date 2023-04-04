@@ -1,6 +1,6 @@
 <h1 align="center"> Holberton School Printf.</h1>
-This repository contains the code Printf project. <br>
-
+<h2>This repository contains the code Printf project.</h2>
+<br>
 *[Description](#Description)
 
 *[File Descriptions](#File-Descriptions)

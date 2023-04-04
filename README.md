@@ -1,6 +1,5 @@
-<em> Holberton School Printf. </em>
+<h1 align="center"> Holberton School Printf.</h1>
 This repository contains the code Printf project. <br>
-##Índice
 
 *[Description](#Description)
 
@@ -13,9 +12,10 @@ This repository contains the code Printf project. <br>
 
 <h1> Description. </h1>
 The purpose of this project is to recreate some of the functionality of the C standard library's printf function. Prototype: int _printf(const char *format, ...); <br>
-File Descriptions:
-<br>
-Requirements The following standard library functions and macros are used in this project: <br>
+<h1> File Descriptions: </h1>
+
+
+<h1> Requirements The following standard library functions and macros are used in this project:</h1>
 1.write (man 2 write) <br>
 2.malloc (man 3 malloc) <br>
 3.free (man 3 free) <br>

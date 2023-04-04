@@ -1,10 +1,10 @@
 <h1 align="center"> Holberton School Printf.</h1>
 <h2 align="center">This repository contains the code Printf project.</h2>
 
-<h1> Examples. </h1>
-- Character (c): Print a single character. <br>
-char character = 'A'; <br>
-printf("The character is %c\n", character);<br>
+## Examples 
+### Character (c): Print a single character. <br>
+- char character = 'A'; <br>
+- printf("The character is %c\n", character);<br>
  Output: The character is A <br>
 - String (s): Print a string of characters. <br>
 char name = "Nacho";<br>

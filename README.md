@@ -24,14 +24,15 @@
 
 <h1> Description. </h1>
 The purpose of this project is to recreate some of the functionality of the C standard library's printf function. Prototype: int _printf(const char *format, ...); <br>
-## Files Descriptions: 
-- fp.c :       <br>
-- main.h :     <br>
-- _putchar.c : <br>
-- printf.c :   <br>
-- _printf2.man : <br>
 
-<h1> Requirements:</h1>
+## Files Descriptions: 
+### fp.c :       <br>
+### main.h :     <br>
+### _putchar.c : <br>
+### printf.c :   <br>
+### _printf2.man : <br>
+
+## Requirements:
 The following standard library functions and macros are used in this project <br> 
 - write (man 2 write) <br>
 - malloc (man 3 malloc) <br>

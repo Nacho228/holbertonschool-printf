@@ -27,10 +27,15 @@ The purpose of this project is to recreate some of the functionality of the C st
 
 ## Files Descriptions: 
 ### fp.c :       <br>
+- This file contains the implementation of the "printf" function in C. It defines a table of operations that determine how to handle different data types that can be printed. The "printf" function is implemented as a function that takes a format string and a variable list of arguments, and returns the number of characters printed. The table of operations includes functions to handle the printing of characters, strings, and integers. <br> 
 ### main.h :     <br>
+- This file contains the implementation of the "printf" function in C. It defines a struct called "printf" which includes a character "pf" and a function pointer "fp" that takes a va_list argument. It also includes the declaration of several functions used to implement "printf", including "_putchar", "pf_c", "pf_s", "pf_d", and "init_fp". The "printf" function itself is implemented as a variadic function that takes a format string and a variable list of arguments. <br>
 ### _putchar.c : <br>
+- This file contains the implementation of the "_putchar" function in C. The "_putchar" function is used to write a single character to the standard output stream. It takes a character as an argument and returns the number of characters written. The implementation of "_putchar" in this file uses the "write" system call to write the character to the standard output stream. <br>
 ### printf.c :   <br>
+- This file contains the implementation of the "_printf" function in C. The "_printf" function is used to print data to the standard output according to a specified format. It takes a format string and a variable list of arguments as input, and returns the number of characters printed. The implementation of "_printf" in this file uses a "va_list" to handle variable arguments and a "switch" statement to determine the appropriate output format based on the format string. The function only handles the %c, %s, and %% format specifiers, and it calls the appropriate function (pf_c or pf_s) to output the data. The function also includes a loop to iterate through the characters in the format string and a counter to keep track of the number of characters printed. <br> 
 ### _printf2.man : <br>
+- This file is a man page for the "_printf" function in C. The man page provides a brief description of the function and its usage. The function is described as a C standard library function used to print data to the standard output according to a specified format. It only handles the %c, %s, and %% format specifiers. The man page also provides information on the return value of the function and includes an example usage of the function. <br>
 
 ## Requirements:
 The following standard library functions and macros are used in this project <br> 
@@ -43,4 +48,3 @@ The following standard library functions and macros are used in this project <br
 - va_arg (man 3 va_arg) <br>
 <h1> Authors. </h1>
 This project was created by Holberton School Uruguay students Nacho Llanes (@nacho228) and Vicenzo Anza (@vicenzoanza).
-=======

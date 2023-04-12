@@ -10,9 +10,12 @@ int _printf(const char *format, ...)
     va_start(args, format);
     buffer = format;
 
-    while (buffer[i] != '\0') {
-        if (buffer[i] == '%') {
-            switch (buffer[i + 1]) {
+    while (buffer[i] != '\0') 
+    {
+        if (buffer[i] == '%') 
+	{
+            switch (buffer[i + 1]) 
+	    {
                 
 		case 'c':
                 count += pf_c(va_arg(args, int));
